@@ -1,0 +1,119 @@
+<!-- START HEADER  -->
+<div class="header">
+  <!-- START HEADER TOPBAR  -->
+  <div class="topbar bg-custom-blue py-2.5 bg-[#01b7f2]">
+    <div class="container">
+      <div class="tobar-bar flex justify-between items-center">
+        <div class="left-side">
+          <ul class="custom-flex flex items-center flex-wrap">
+            <li>
+              <a class="px-3 py-2 text-xs text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a class="px-3 py-2 text-xs text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="px-3 py-2 text-xs text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="px-3 py-2 text-xs text-white"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <ul class="custom-flex flex items-center flex-wrap">
+            <li class="px-3 py-2 text-xs text-white">LOGIN</li>
+            <li class="px-3 py-2 text-xs text-white">SIGNUP</li>
+            <li class="px-3 py-2 text-xs text-white">
+              <select name="" id="" class="bg-[#01b7f2]">
+                <option value="">USD</option>
+                <option value="">INR</option>
+                <option value="">EURO</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER TOPBAR  -->
+  <!-- START HEADER NAVIGATION  -->
+  <div class="navigation">
+    <div class="container">
+      <div class="main-navigation flex justify-between items-center">
+        <div class="logo my-5 w-[156px]">
+          <a href="index.html">
+            <img src="images/toor-logo.png" alt="" />
+          </a>
+        </div>
+        <div class="main-menue flex items-center" #mainMenue>
+          <nav>
+            <ul class="custom-flex flex items-center flex-wrap">
+              <li class="menu-item menu-item-has-children active py-5">
+                <a routerLink="/" class="px-3">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Hotels
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Flights
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Cruise
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Cars
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Blog
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children py-5">
+                <a href="#" class="px-3 text-[#838383]"
+                  >Pages
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cta-btn ms-4">
+            <a href="" class="btn-submit first-btn">Enquiry Now</a>
+          </div>
+        </div>
+        <div
+          class="hidden cursor-pointer hamburger-menu"
+          (click)="toggelMenue(mainMenue)"
+        >
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER NAVIGATION  -->
+</div>

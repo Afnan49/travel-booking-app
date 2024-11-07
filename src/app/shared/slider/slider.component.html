@@ -1,0 +1,47 @@
+<div class="duration-1000 flex">
+  <ng-container *ngFor="let item of sliderItems; let i = index">
+    <!-- =========== -->
+    @if(i===curentIndex){
+    <div class="slider h-[130vh] w-full relative duration-1000" @slidFade>
+      <div
+        class="baner-image w-full h-[130vh] relative bg-cover bg-center"
+        [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }"
+      >
+        <div
+          class="overlay absolute w-full h-full bg-black opacity-50 top-0 left-0"
+        ></div>
+      </div>
+
+      <div class="transform">
+        <div class="container">
+          <!-- ============= -->
+          <div
+            class="row flex flex-col justify-center lg:flex-row md:justify-between items-center"
+          >
+            <div class="content">
+              <h1
+                class="banner-title text-4xl lg:text-6xl text-white from-neutral-600 lead"
+              >
+                {{ item.p1 }}
+                <span class="text-[#01b7f2]">{{ item.span }}</span>
+                {{ item.p2 }}
+              </h1>
+              <ul class="features my-9">
+                @for( feature of item.features; track feature.id){
+                <li class="banner-li flex items-center text-xl mb-2 text-white">
+                  <i [class]="feature.icon"></i>
+                  {{ feature.p }}
+                </li>
+                }
+              </ul>
+              <!-- ========== -->
+              <a class="btn-submit first-btn">{{ item.button }}</a>
+            </div>
+            <div class="banner-half w-[50%]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </ng-container>
+</div>

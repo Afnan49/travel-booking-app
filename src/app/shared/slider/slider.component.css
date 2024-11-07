@@ -1,0 +1,54 @@
+.transform {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 0;
+  left: 0;
+}
+.banner-li i {
+  color: #01b7f2;
+  font-size: 22px;
+  margin-right: 15px;
+  width: 27px;
+  height: 22px;
+  text-align: center;
+}
+.btn-submit {
+  cursor: pointer;
+  border: 1px solid #01b7f2;
+  color: #01b7f2;
+  background: #fff;
+}
+.first-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 40px;
+  position: relative;
+  transition: 0.5s all;
+  background: transparent;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+  min-width: 197px;
+}
+.btn-submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #00a3c8;
+  transition: 0.7s all;
+  border-radius: 50px;
+  z-index: -1;
+}
+.btn-submit:hover::before {
+  width: 100%;
+}
+.btn-submit:hover {
+  color: #ffff !important;
+}

@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000;
+  background: #ffffff;
+  border-color: #dfdfdf;
+  transition: transform ease-in 0.4s;
+  height: 20000px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====< MEDIA FOR CONTAINER >=========== */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

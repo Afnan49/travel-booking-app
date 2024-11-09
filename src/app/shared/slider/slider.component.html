@@ -2,9 +2,9 @@
   <ng-container *ngFor="let item of sliderItems; let i = index">
     <!-- =========== -->
     @if(i===curentIndex){
-    <div class="slider h-[130vh] w-full relative duration-1000" @slidFade>
+    <div class="slider h-[120vh] w-full relative duration-1000" @slidFade>
       <div
-        class="baner-image w-full h-[130vh] relative bg-cover bg-center"
+        class="baner-image w-full h-[120vh] relative bg-cover bg-center"
         [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }"
       >
         <div

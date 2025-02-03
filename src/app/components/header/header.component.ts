@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,17 +6,15 @@ import { Component, ElementRef, HostListener } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  constructor(private elementRef: ElementRef) {}
-
-  toggelMenue(menue: HTMLDivElement) {
-    menue.classList.toggle('active2');
-  }
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const navbar = this.elementRef.nativeElement.querySelector('.navigation');
-    window.pageYOffset > 0
-      ? navbar.classList.add('sticky')
-      : navbar.classList.remove('sticky');
+  onMenueToggel(links: HTMLDivElement, overlay: HTMLDivElement) {
+    if (links.classList.contains('hidd_links')) {
+      links.classList.remove('hidd_links');
+      links.classList.add('show_links');
+      overlay.style.display = 'block';
+    } else {
+      links.classList.add('hidd_links');
+      links.classList.remove('show_links');
+      overlay.style.display = 'none';
+    }
   }
 }

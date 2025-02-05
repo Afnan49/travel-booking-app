@@ -4,8 +4,16 @@
   --opacity-black: #00000061;
   --dark-gray: #434a54;
   --light-gray: #f2f2f2;
+  --gray: #e4e6e8;
   --sky-blue: #5d5fef;
   --white: #ffffff;
-  --ligh-blue: #8ac7f1;
+  --light-blue: #8ac7f1;
+  --medium-gray: #737373;
+  --light-medium-gray: #d6d7d8;
+  --medium-blue: #4285f4;
+  --dark-medium-gray: #6e6e6e;
+  --green-blue: #14b9d5;
+  --perbel: #ba71da;
+  --crimey: #e4e4e4;
 }
 /* ==== end ROOT==== */

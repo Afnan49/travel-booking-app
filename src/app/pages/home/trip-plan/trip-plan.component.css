@@ -1,0 +1,260 @@
+@import "../../../../css/colors.css";
+@import "../../../../css/media.css";
+.plan_content {
+  background-image: url("../../../../../public/images/home/trip-plan/map-background.png");
+  margin-top: 85px;
+  margin-bottom: 135px;
+}
+.text_content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding: 0 20px;
+}
+.text_content span {
+  font-family: "Reenie Beanie", "serif";
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--sky-blue);
+}
+.text_content h2 {
+  max-width: 641.26px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.text_content p {
+  max-width: 641.26px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-medium-gray);
+}
+.text_content button {
+  position: relative;
+  font-family: "Poppins", "serif";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background-color: var(--sky-blue);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.text_content button:hover {
+  color: var(--sky-blue);
+  background-color: transparent;
+}
+.text_content button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  z-index: -1;
+}
+.text_content button:hover::before {
+  width: 100%;
+}
+.images {
+  padding: 20px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.image_1 {
+  background-image: url(../../../../../public/images/home/trip-plan/plan-image1.png);
+}
+.image_2 {
+  background-image: url(../../../../../public/images/home/trip-plan/plan-image2.png);
+}
+.image_3 {
+  background-image: url(../../../../../public/images/home/trip-plan/plan-image3.png);
+}
+.plan-img {
+  border-radius: 15px;
+  display: flex;
+  padding: 20px 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: start;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.plan-img img {
+  max-width: 80px;
+}
+.plan-img p {
+  font-family: "Poppins", "serif";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--white);
+}
+.cards {
+  margin-top: 105px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.cards .card .img-div {
+  max-width: 419px;
+  position: relative;
+  z-index: -1;
+}
+.cards .card .img-div span {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  padding: 3px 18px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: var(--white);
+}
+.cards .card .img-div img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.cards .card p {
+  color: var(--dark-medium-gray);
+}
+.cards .first_card i {
+  color: var(--sky-blue);
+}
+.cards .first_card .card-content .details button,
+.cards .first_card .img-div span {
+  background-color: var(--sky-blue);
+}
+.cards .second_card i {
+  color: var(--green-blue);
+}
+.cards .second_card .card-content .details button,
+.cards .second_card .img-div span {
+  background-color: var(--green-blue);
+}
+.cards .third_card i {
+  color: var(--perbel);
+}
+.cards .third_card .card-content .details button,
+.cards .third_card .img-div span {
+  background-color: var(--perbel);
+}
+.cards .card .card-content {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 10%) 0 0 30px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: var(--white);
+  margin-top: -56px;
+}
+.cards .card .card-content .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 10%) 0 0 15px;
+  border-radius: 5px;
+  padding: 12px 20px 14px;
+}
+.cards .card .card-content .info .time,
+.cards .card .card-content .info .contact {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+.cards .card .card-content .info i {
+  font-size: 15px;
+}
+.cards .card .card-content .info p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.cards .card .card-content .loction {
+  padding: 30px 0px 20px;
+  border-bottom: 1px solid var(--crimey);
+}
+.cards .card .card-content .loction h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.cards .card .card-content .loction p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.cards .card .card-content .loction p i {
+  margin-right: 15px;
+}
+.cards .card .card-content .tetx {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--crimey);
+}
+.cards .card .card-content .details {
+  padding: 20px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards .card .card-content .details > div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.cards .card .card-content .details button {
+  padding: 13px 30px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-family: "Poppins", "serif";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+}
+.cards .card .card-content .details p.price {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 37px;
+  color: var(--black);
+}
+.cards .card .card-content .details p.price span {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: var(--dark-medium-gray);
+  text-decoration: line-through;
+}
+/* ==== start media ==== */
+@media (max-width: 1289px) {
+  .plan-img img {
+    max-width: 60px;
+  }
+}
+@media (max-width: 1146px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 465px) {
+  .plan-img {
+    padding: 20px;
+  }
+}
+@media (max-width: 383px) {
+  .plan-img img {
+    max-width: 40px;
+  }
+}

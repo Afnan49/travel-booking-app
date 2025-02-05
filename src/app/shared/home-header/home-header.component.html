@@ -1,0 +1,73 @@
+<div>
+  <p-carousel
+    [value]="slider"
+    [numVisible]="1"
+    [numScroll]="1"
+    [circular]="true"
+    autoplayInterval="3000"
+  >
+    <ng-template let-product pTemplate="item">
+      <div class="slider-image">
+        <div class="overlay"></div>
+        <img src="{{ product.image }}" [alt]="" class="" />
+      </div>
+    </ng-template>
+  </p-carousel>
+  <div class="container">
+    <div class="options">
+      <div class="taps">
+        <button>Tours</button>
+        <button>Hotels</button>
+        <button>Tickets</button>
+        <button>Rental</button>
+        <button>activities</button>
+      </div>
+      <div class="search-options">
+        <div class="location">
+          <label for="location">Location</label>
+          <div>
+            <i class="ri-map-pin-fill"></i>
+            <select name="location" id="location">
+              <option value="">New York, USA</option>
+              <option value="">Tokyo</option>
+              <option value="">India</option>
+              <option value="">Dubai</option>
+            </select>
+          </div>
+        </div>
+        <div class="check_in">
+          <label for="check_in">Check In</label>
+          <div>
+            <i class="ri-calendar-schedule-fill"></i>
+            <div class="input-div">
+              <input type="date" />
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="check_out">
+          <label for="check_out">Check Out</label>
+          <div>
+            <i class="ri-calendar-schedule-fill"></i>
+            <div class="input-div">
+              <input type="date" />
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="Guest">
+          <label for="Guest">Guest</label>
+          <div>
+            <i class="ri-user-3-fill"></i>
+            <select name="Guest" id="Guest">
+              <option value="">2 adults, 2 children</option>
+              <option value="">3 adults, 1 children</option>
+              <option value="">6 adults, 0 children</option>
+              <option value="">4 adults, 0 children</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

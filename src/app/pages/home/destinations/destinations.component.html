@@ -1,0 +1,29 @@
+<div class="destination_content">
+  <div class="container">
+    <div class="text">
+      <span class="span_text">Next Adventure</span>
+      <h2 class="medium_header">Travel Destinations Available Worldwide</h2>
+      <p class="small_text">
+        We have compiled a list of top destinations across the globe, scoured
+        the world for the most alluring and fascinating places to visit. From
+        the beautiful beaches of the Caribbean to the majestic mountains of
+        Europe and the vibrant cities of Asia, our destination list has
+        something for everyone.
+      </p>
+    </div>
+    <div class="destination_cards">
+      @for(card of destinationCards;track card.id){
+      <div class="card">
+        <div class="card_image">
+          <img [src]="card.image" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="card_content">
+          <h2 class="small_header">{{ card.title }}</h2>
+          <p>{{ card.text }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

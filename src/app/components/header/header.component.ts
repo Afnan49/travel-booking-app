@@ -7,15 +7,13 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HeaderComponent {
-  onMenueToggel(links: HTMLDivElement, overlay: HTMLDivElement) {
+  onMenueToggel(links: HTMLDivElement) {
     if (links.classList.contains('hidd_links')) {
       links.classList.remove('hidd_links');
       links.classList.add('show_links');
-      overlay.style.display = 'block';
     } else {
       links.classList.add('hidd_links');
       links.classList.remove('show_links');
-      overlay.style.display = 'none';
     }
   }
 }

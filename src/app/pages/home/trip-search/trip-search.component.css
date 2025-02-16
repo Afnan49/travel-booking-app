@@ -1,0 +1,120 @@
+@import "../../../../css/colors.css";
+@import "../../../../css/media.css";
+.trip_search_content {
+  padding: 120px 0;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.trip_search_content span.header1 {
+  font-family: "Reenie Beanie", "serif";
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--sky-blue);
+  display: block;
+  text-align: center;
+}
+.trip_search_content h2.header2 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Poppins", "serif";
+}
+.trip_search_content p.text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 728px;
+  padding: 20px 0px;
+}
+.trip_search_content .search_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px 30px;
+  background-color: var(--white);
+  width: 100%;
+}
+.trip_search_content .search_content .option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 41px 0px 30px;
+  gap: 13px;
+}
+.trip_search_content .search_content .option i {
+  font-size: 35px;
+  color: var(--orange);
+}
+.trip_search_content .search_content .option .input {
+  display: flex;
+  flex-direction: column;
+  align-items: strat;
+  justify-content: center;
+}
+.trip_search_content .search_content .option .input .label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.trip_search_content .search_content .option .input input,
+.trip_search_content .search_content .option .input select {
+  border: none;
+  appearance: none;
+  padding: 5px 0px;
+  outline: none;
+}
+.trip_search_content .search_content .option .input input::placeholder,
+.trip_search_content .search_content .option .input select {
+  font-size: 14px;
+  font-family: "Poppins", "serif";
+  color: var(--dark-medium-gray);
+  min-width: 166px;
+}
+.trip_search_content .search_content button {
+  position: relative;
+  padding: 20px 120px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--rose);
+  color: var(--white);
+  font-size: 14px;
+  font-family: "Poppins", "serif";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ======< start media >===== */
+@media (max-width: 1266px) {
+  .trip_search_content .search_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 706px) {
+  .trip_search_content .search_content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 20px 5px;
+  }
+  .trip_search_content .search_content button {
+    padding: 20px;
+    width: 100%;
+  }
+  .trip_search_content .search_content .option {
+    padding: 0px 10px 0px 10px;
+  }
+  .trip_search_content p.text {
+    padding: 0;
+  }
+}

@@ -1,13 +1,4 @@
 @import "../../../css/colors.css";
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--opacity-black);
-  display: none;
-}
 .home_header {
   max-height: 80px;
   background-color: var(--light-gray);
@@ -102,6 +93,30 @@
   border-radius: 5px;
   color: var(--white);
   cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.options button:hover {
+  color: var(--sky-blue);
+  background-color: transparent;
+}
+.options button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  z-index: -1;
+}
+.options button:hover::before {
+  width: 100%;
 }
 .hidd_links {
   left: -270px;
@@ -135,7 +150,7 @@
     width: 270px;
     height: calc(100% - 81px);
     position: fixed;
-    bottom: 0px;
+    bottom: 1px;
     background-color: var(--sky-blue);
   }
   .links ul {
@@ -163,7 +178,7 @@
     max-height: 159px;
   }
   .links {
-    bottom: 0px;
+    bottom: 1px;
     height: calc(100% - 159px);
   }
 }

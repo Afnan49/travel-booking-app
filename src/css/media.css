@@ -3,11 +3,23 @@
     font-size: 43px !important;
     line-height: 53px !important;
   }
+  .xmedium_header {
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
 }
 @media (max-width: 632px) {
   .medium_header {
     font-size: 37px !important;
     line-height: 47px !important;
+  }
+  .small_header {
+    font-size: 19px !important;
+    line-height: 23px !important;
+  }
+  .xmedium_header {
+    font-size: 29px !important;
+    line-height: 39px !important;
   }
 }
 @media (max-width: 555px) {
@@ -18,6 +30,14 @@
   .small_text {
     font-size: 15px !important;
     line-height: 23px !important;
+  }
+  .small_header {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .xmedium_header {
+    font-size: 26px !important;
+    line-height: 36px !important;
   }
 }
 @media (max-width: 491px) {
@@ -33,6 +53,14 @@
     font-size: 14px !important;
     line-height: 22px !important;
   }
+  .small_header {
+    font-size: 17px !important;
+    line-height: 21px !important;
+  }
+  .xmedium_header {
+    font-size: 23px !important;
+    line-height: 33px !important;
+  }
 }
 @media (max-width: 465px) {
   .medium_header {
@@ -46,7 +74,17 @@
   .small_text {
     font-size: 13px !important;
   }
+  .small_header {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .xmedium_header {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
 }
-/* medium header */
-/* small_text */
-/* span_text */
+/* medium_header====> 50px --- >   33px */
+/* xmedium_header===> 35px --- >   20px*/
+/* small_header=====> 20px --- >   16px */
+/* small_text=======> 16px --- >   13px */
+/* span_text========> 29px --- >   23px*/

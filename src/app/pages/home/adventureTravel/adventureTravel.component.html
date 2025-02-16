@@ -1,0 +1,45 @@
+<div class="adventure_travel">
+  <div class="container">
+    <p-carousel
+      [value]="travels"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      autoplayInterval="3000"
+    >
+      <ng-template let-image pTemplate="item">
+        <div>
+          <img src="{{ image }}" [alt]="" />
+        </div>
+      </ng-template>
+    </p-carousel>
+    <div class="content">
+      <div class="discription">
+        <span class="span_text">Adventure Travel</span>
+        <h2 class="medium_header">Embrace the Thrill of the Unknown</h2>
+        <p class="small_text">
+          Are you tired of the typical tourist destinations and looking to step
+          out of your comfort zone? Adventure travel may be the perfect solution
+          for you! Here are four reasons why you should book an adventure travel
+          experience :
+        </p>
+      </div>
+      <ul>
+        <li>
+          <i class="ri-check-line"></i>
+          <p>Connect with nature</p>
+        </li>
+        <li>
+          <i class="ri-check-line"></i>
+          <p>Experience other cultures</p>
+        </li>
+        <li>
+          <i class="ri-check-line"></i>
+          <p>Create unforgettable memories</p>
+        </li>
+      </ul>
+      <button>All Services</button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</div>

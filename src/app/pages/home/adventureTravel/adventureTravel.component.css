@@ -1,0 +1,57 @@
+@import "../../../../css/colors.css";
+@import "../../../../css/media.css";
+.adventure_travel {
+  padding: 120px 0;
+  background-image: url("../../../../../public/images/home/carousal/div-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.adventure_travel .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 70%), transparent);
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+:host ::ng-deep .p-carousel-container {
+  max-width: 610px;
+  max-height: 600px;
+}
+:host ::ng-deep .p-carousel-container img {
+  max-width: 100%;
+}
+.content {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 41px;
+}
+.discription {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.discription span {
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--white);
+  font-family: "Reenie Beanie", "serif";
+}
+.discription h2 {
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--white);
+  max-width: 526px;
+}

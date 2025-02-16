@@ -1,0 +1,104 @@
+@import "../../../../css/colors.css";
+@import "../../../../css/media.css";
+.destination_content {
+  padding: 120px 20px;
+}
+.destination_content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.destination_content .text span {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Reenie Beanie", "serif";
+  color: var(--sky-blue);
+}
+.destination_content .text h2 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+  max-width: 533px;
+}
+.destination_content .text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-medium-gray);
+  max-width: 635px;
+}
+.destination_content .destination_cards {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.destination_content .destination_cards .card {
+  position: relative;
+  max-width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.destination_content .destination_cards .card img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.destination_content .destination_cards .card .card_content {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.destination_content .destination_cards .card .card_content h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--white);
+}
+.destination_content .destination_cards .card .card_content p {
+  font-size: 14px;
+  color: var(--white);
+  padding: 0 35px;
+}
+.destination_content .destination_cards .card .card_image {
+  position: relative;
+  height: 100%;
+}
+.destination_content .destination_cards .card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 32%);
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.destination_content .destination_cards .card:hover .overlay {
+  height: 100%;
+}
+.destination_content .destination_cards .card:hover .card_content {
+  opacity: 1;
+}
+/* ====< start media >==== */
+@media (max-width: 1102px) {
+  .destination_content .destination_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination_content .destination_cards .card {
+    max-width: 100%;
+  }
+}
+@media (max-width: 555px) {
+  .destination_content .destination_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destination_content .destination_cards .card {
+    max-width: 100%;
+  }
+}

@@ -1,7 +1,6 @@
 @import "../../../../css/colors.css";
 @import "../../../../css/media.css";
 .plan_content {
-  background-image: url("../../../../../public/images/home/trip-plan/map-background.png");
   margin-top: 85px;
   margin-bottom: 135px;
 }
@@ -174,6 +173,10 @@
   justify-content: start;
   gap: 15px;
 }
+.cards .card .card-content .info .time p {
+  font-size: 14px;
+  line-height: 21px;
+}
 .cards .card .card-content .info i {
   font-size: 15px;
 }
@@ -243,7 +246,22 @@
     max-width: 60px;
   }
 }
-@media (max-width: 1146px) {
+@media (max-width: 1240px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .cards .card {
+    max-width: 640px;
+  }
+  .cards .card .img-div {
+    max-width: 640px;
+  }
+  .cards .card .card-content {
+    margin-top: -23px;
+  }
+}
+@media (max-width: 1216px) {
   .images {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -251,6 +269,21 @@
 @media (max-width: 465px) {
   .plan-img {
     padding: 20px;
+  }
+}
+@media (max-width: 427px) {
+  .cards .card .card-content .info {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .cards .card .card-content .details {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .cards .card .card-content .details > div {
+    align-items: start;
   }
 }
 @media (max-width: 383px) {
